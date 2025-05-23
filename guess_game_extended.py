@@ -1,6 +1,6 @@
-# print("Welcome to the number guessing game!")
-# print("I'm thinking of a number between 1 and 10")
-# print("Enter 'quit' to exit the game at any time.")
+print("Welcome to the number guessing game!")
+print("I'm thinking of a number between 1 and 10")
+print("Enter 'quit' to exit the game at any time.")
 
 import random
 
@@ -10,8 +10,12 @@ number_to_guess = random.randint(1, 10)
 while parsed_guess != number_to_guess:
     user_input = input("Please enter your guess: ")
 
-    print("You guessed: " + user_input)
+    if user_input == "quit":
+        print("Thanks, bye!")
+        exit()
 
+    print("You guessed: " + user_input)
+    
     # print(f"You guessed: {user_input}")
 
     try:
