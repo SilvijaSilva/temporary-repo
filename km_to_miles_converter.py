@@ -6,12 +6,14 @@ except Exception:
     print("Invalid input. Please enter a number for kilometers.")
     exit()
 
-conversion_rate = 1.60934
-
-miles = kilometers * conversion_rate
+print("You entered " + str(kilometers) + " kilometers")
 
 conversion_rate = 1.60934
 
 miles = kilometers * conversion_rate
 
-print(f"{kilometers} kilometers are equal to {miles} miles")
+conversion_rate = 1.60934
+
+miles = kilometers * conversion_rate
+
+print(str(kilometers) + " kilometers are equal to " + str(miles) + " miles")
